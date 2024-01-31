@@ -1,0 +1,31 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.bird{
+    width: 352px;
+    height: 360px;
+    background-image: url('../image/twitter.webp');
+    background-size: cover;
+    animation: fly 1s infinite steps(4);
+    transform: rotateZ(45deg);
+}
+@keyframes fly {
+    0%{
+        background-position: 0px 0px;
+    }
+    100%{
+        background-position: -1443px 0px;
+    }
+}
+.contabird{
+    animation: move 2s infinite linear;
+}
+@keyframes move{
+    from{
+        transform: translate(0%);
+    }
+    to{
+        transform: translate(100%);
+    }
+}
